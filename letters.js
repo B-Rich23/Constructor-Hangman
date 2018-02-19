@@ -1,26 +1,10 @@
-
-// var userGuess; 
-
-// const chalk = require('chalk');
-
-// var inquirer = require('inquirer');
-
-
-// inquirer.prompt([/* Pass your questions in here */
-// {type: "input",
-// message: "What is your guess?",
-// name: "userGuess"}
-// ]).then(answers => {
-//     // Use user feedback for... whatever!!
-//     console.log(answers.userGuess);
-//     Letters();
-// });
+// var WordArray = require("./wordarray.js");
 
 
 // Constructor function for creating Letters objects
-var Letters = function(letter, placeholder) {
+var Letters = function(letter) {
 	  this.letter = letter;
-	  this.placeholder = placeholder;
+	  this.placeholder = "_";
 	  this.guessed = false;
 	  this.result = function() {
 		if (this.guessed === true) {
@@ -67,8 +51,8 @@ this.toString = function() {
 
 // userGuess = answers.userGuess;
 
-var userGuess = new Letters ("p", "_");
-console.log(userGuess);
+// var userGuess = new Letters ("p", "_");
+// console.log(userGuess);
 
 // // exporting our Letters constructor
-// module.exports = Letters;
+module.exports = Letters;

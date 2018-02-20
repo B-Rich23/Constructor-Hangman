@@ -18,14 +18,15 @@ Letters.prototype.result = function() {
     
 };
 
-Letters.prototype.toString = function() {
-	// if (userGuess === this.letter) {
+Letters.prototype.reveal = function() {
+	var userGuess;
+	if (userGuess === this.letter) {
 		this.guessed === true;
-		result();
-	// }
-	// else {
-	// 	result();
-	// }
+		this.result();
+	}
+	else {
+		this.result();
+	}
     
 };
 

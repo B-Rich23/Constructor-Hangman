@@ -28,6 +28,7 @@ Words.prototype.addLetters = function () {
 
 Words.prototype.display = function () {
 	for (i = 0; i < this.newWord.length; i++) {
+		// this.displayArray.push(this.newWord[i].reveal());
 		this.displayArray.push(this.newWord[i].result());
 		// this.newWord[i].result();
 	}

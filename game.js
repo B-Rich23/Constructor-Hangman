@@ -60,7 +60,7 @@ name: "userGuess"}
 	    	runGame();
 
 	    }
-	    else if ()
+	    // else if ()
 	    else {
 		    guessedLetters.push(userGuess);
 		    // console.log(guessedLetters);

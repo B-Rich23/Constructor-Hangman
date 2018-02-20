@@ -62,11 +62,15 @@ Words.prototype.display = function () {
 			console.log(this.displayArray.join(" "));
 };
 
+// var wordSelection = new WordArray();
+  // wordSelection.wordInPlay();
 
-var firstWord = new Words("dog"); 
-firstWord.wordSplit();
-firstWord.addLetters();
-firstWord.display();
 
-// exporting our Classroom constructor. We will require it in main.js
+
+// var firstWord = new Words(currentWord); 
+// firstWord.wordSplit();
+// firstWord.addLetters();
+// firstWord.display();
+
+// exporting our Words constructor. We will require it in game.js
 module.exports = Words;

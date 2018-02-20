@@ -1,4 +1,4 @@
-// var WordArray = require("./wordarray.js");
+var WordArray = require("./wordarray.js");
 
 
 // Constructor function for creating Letters objects
@@ -20,10 +20,10 @@ var Letters = function(letter) {
 // this.toString = function() {
 // 	if (userGuess === this.letter) {
 // 		this.guessed === true;
-// 		result();
+// 		this.result();
 // 	}
 // 	else {
-// 		result();
+// 		this.result();
 // 	}
     
 // };
@@ -55,6 +55,11 @@ var Letters = function(letter) {
 
 // var userGuess = new Letters ("p", "_");
 // console.log(userGuess);
+
+var wordSelection = new WordArray();
+ wordSelection.wordInPlay();
+ console.log(currentWord);
+
 
 // // exporting our Letters constructor
 module.exports = Letters;

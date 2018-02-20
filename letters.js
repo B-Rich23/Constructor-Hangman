@@ -8,23 +8,25 @@ var Letters = function(letter) {
 	  this.guessed = false;
 	  this.result = function() {
 		if (this.guessed === true) {
-			return this.letter;	
+			// console.log(this.letter);
+			return this.letter;
 		}
 		else {
+			// console.log(this.placeholder);
 			return this.placeholder;
 		}
     
 };
-this.toString = function() {
-	if (userGuess === this.letter) {
-		this.guessed === true;
-		result();
-	}
-	else {
-		result();
-	}
+// this.toString = function() {
+// 	if (userGuess === this.letter) {
+// 		this.guessed === true;
+// 		result();
+// 	}
+// 	else {
+// 		result();
+// 	}
     
-};
+// };
 
 };
 

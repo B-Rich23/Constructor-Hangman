@@ -8,27 +8,15 @@ var Words = require("./words.js");
 var userGuess; 
 
   // Variables that set the initial state of our hangman game.
-  wordInPlay = null;
-  lettersOfTheWord = [];
-  matchedLetters = [];
-  guessedLetters = [];
-  guessesLeft = 0;
-  totalGuesses = 0;
-  letterGuessed = null;
-  wins = 0;
+ var wordInPlay = null;
+ var lettersOfTheWord = [];
+ var matchedLetters = [];
+ var guessedLetters = [];
+ var guessesLeft = 0;
+ var totalGuesses = 0;
+ var letterGuessed = null;
+ var wins = 0;
 
-// const chalk = require('chalk');
-
-// var figlet = require('figlet');
- 
-// figlet('Hangman', function(err, data) {
-//     if (err) {
-//         console.log('Something went wrong...');
-//         console.dir(err);
-//         return;
-//     }
-//     console.log(data)
-// });
 
 
 
@@ -54,9 +42,10 @@ name: "userGuess"}
 	    	// console.log(wordInPlay[i]);
 	    if (userGuess === wordInPlay[i]) {
 	    	// wordInPlay[i].toString();
-	    	// wordInPlay[i].display();
+	    	firstWord.display();
 	    	console.log("Correct Charlie!");
 	    	// return inquirer.prompt(prompts);
+	    	clear()
 	    	runGame();
 
 	    }
@@ -67,12 +56,12 @@ name: "userGuess"}
 		    // return guessedLetters;
 
 		}
-	};
+	}
 
 });
 };
 
-console.log(runGame);
+
 runGame();
 
 

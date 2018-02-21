@@ -18,17 +18,24 @@ Letters.prototype.result = function() {
     
 };
 
-Letters.prototype.reveal = function() {
-	var userGuess;
+Letters.prototype.reveal = function(userGuess) {
+	userGuess;
 	if (userGuess === this.letter) {
+
 		this.guessed === true;
-		this.result();
+				return this.letter;	
 	}
 	else {
-		this.result();
+		return this.placeholder;
+	}
+
+		// this.result();
+	// }
+	// else {
+	// 	this.result();
 	}
     
-};
+// };
 
 var wordSelection = new WordArray();
  wordSelection.wordInPlay();
